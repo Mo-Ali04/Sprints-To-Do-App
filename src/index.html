@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ToDo App</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.scss" type="text/css" media="all" />
+</head>
+<body>
+  <div class="container">
+    <h1>Todo Login</h1>
+       <div class="contact-form">
+       <div>
+       <img src="https://robohash.org/zucker-ping.png" class="profile-pic" alt="User Icon"/>
+       </div>
+       <div class="signin">
+         <form>
+            <select name="username" class="user">
+              <option id="0">-- Select User --</option>
+              <option id="1">zucker</option>
+              <option id="2">felon</option>
+              <option id="3">robon</option>
+              <!-- <option *ngFor="let user of usersList">
+                {{user.name}}
+              </option> -->
+            </select>
+            <input type="password" class="pass" id="pass" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" />
+         </form>
+       </div>	 
+            <input type="submit" value="Login"/>
+       </div>
+    </div>
+    <app-root></app-root>
+    <router-outlet></router-outlet>
+</body>
+</html>
